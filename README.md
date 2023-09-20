@@ -2,6 +2,8 @@
 
 This repository is a descendant of the "events base". The events base is **modular**, meaning **you should avoid editing code in the code folder itself.**
 
+[![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+
 ## Adding a new module, where do I do it?
 
 Modules should be individual features/edits, packed into one.
