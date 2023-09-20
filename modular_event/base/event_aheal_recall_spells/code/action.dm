@@ -4,13 +4,9 @@
  */
 /datum/action/cooldown/aheal
 	name = "Fully Heal Self"
-	icon_icon = 'modular_event/base/event_aheal_recall_spells/icons/button.dmi'
+	button_icon = 'modular_event/base/event_aheal_recall_spells/icons/button.dmi'
 	button_icon_state = "arena_heal"
 	cooldown_time = 30 SECONDS
-
-/datum/action/cooldown/aheal/UpdateButton(status_only, force)
-	button_icon_state = IsAvailable() ? initial(button_icon_state) : "arena_heal_used"
-	return ..()
 
 /datum/action/cooldown/aheal/Activate(atom/target)
 	var/mob/living/user = usr

@@ -14,7 +14,7 @@
 	flags_1 |= NODECONSTRUCT_1
 
 /turf
-	explosion_block = 50
+	explosive_resistance = 50
 
 /turf/rust_heretic_act()
 	return
