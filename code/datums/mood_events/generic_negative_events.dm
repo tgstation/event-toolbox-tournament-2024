@@ -167,6 +167,9 @@
 	mood_change = -4
 	timeout = 2 MINUTES
 
+/datum/mood_event/healsbadman/long_term
+	timeout = 10 MINUTES
+
 /datum/mood_event/jittery
 	description = "I'm nervous and on edge and I can't stand still!!"
 	mood_change = -2
@@ -313,6 +316,11 @@
 	description = "I need something to cover my head..."
 	mood_change = -3
 
+/datum/mood_event/bald_reminder
+	description = "I was reminded that I can't grow my hair back at all! This is awful!"
+	mood_change = -5
+	timeout = 4 MINUTES
+
 /datum/mood_event/bad_touch
 	description = "I don't like when people touch me."
 	mood_change = -3
@@ -436,3 +444,7 @@
 	description = "UNWORTHY, UNWORTHY, UNWORTHY!!!"
 	mood_change = -200
 	special_screen_obj = "mood_despair"
+
+/datum/mood_event/all_nighter
+	description = "I didn't sleep at all last night. I'm exhausted."
+	mood_change = -5
