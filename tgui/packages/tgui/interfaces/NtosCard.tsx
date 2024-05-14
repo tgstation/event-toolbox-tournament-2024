@@ -1,4 +1,5 @@
 import { BooleanLike } from 'common/react';
+
 import { useBackend } from '../backend';
 import {
   Box,
@@ -181,7 +182,7 @@ const IdCardPage = (props) => {
               <Input
                 width="100%"
                 value={id_owner}
-                onInput={(e, value) =>
+                onChange={(e, value) =>
                   act('PRG_edit', {
                     name: value,
                   })
@@ -190,11 +191,12 @@ const IdCardPage = (props) => {
             </Stack.Item>
             <Stack.Item>
               <NumberInput
+                step={1}
                 value={id_age || 0}
                 unit="Years"
                 minValue={17}
                 maxValue={85}
-                onChange={(e, value) => {
+                onChange={(value) => {
                   act('PRG_age', {
                     id_age: value,
                   });
@@ -209,7 +211,7 @@ const IdCardPage = (props) => {
                 fluid
                 mt={1}
                 value={id_rank}
-                onInput={(e, value) =>
+                onChange={(e, value) =>
                   act('PRG_assign', {
                     assignment: value,
                   })
@@ -238,7 +240,7 @@ const TemplateDropdown = (props) => {
       <Stack.Item grow>
         <Dropdown
           width="100%"
-          displayText={'Select a template...'}
+          placeholder="Select a template..."
           options={templateKeys.map((path) => {
             return templates[path];
           })}
@@ -247,6 +249,7 @@ const TemplateDropdown = (props) => {
               name: sel,
             })
           }
+          selected="None"
         />
       </Stack.Item>
     </Stack>
