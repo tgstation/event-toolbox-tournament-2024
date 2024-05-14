@@ -4,14 +4,14 @@
 	if(!mapload)
 		return
 	resistance_flags |= INDESTRUCTIBLE
-	obj_flags |= NO_DECONSTRUCTION
+	obj_flags |= NO_DEBRIS_AFTER_DECONSTRUCTION
 
 /obj/machinery/Initialize(mapload)
 	. = ..()
 	if(!mapload)
 		return
 	resistance_flags |= INDESTRUCTIBLE
-	obj_flags |= NO_DECONSTRUCTION
+	obj_flags |= NO_DEBRIS_AFTER_DECONSTRUCTION
 
 /turf
 	explosive_resistance = 50
